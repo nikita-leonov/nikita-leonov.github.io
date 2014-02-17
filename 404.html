@@ -102,7 +102,7 @@
                 links = document.querySelectorAll( 'header nav.main li a'),
                 selection = document.querySelector( 'header .nav-selection' ),
                 subactive = document.querySelector( 'header nav.subnav a.active' );
-                if (subactive != null ) {
+                if (subactive != null && subactive.dataset != null) {
                     subactive = subactive.dataset.subnav;
                 } else {
                     return;

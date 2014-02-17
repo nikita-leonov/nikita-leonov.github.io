@@ -18,7 +18,7 @@ task :generate do
     sass --update _sass:_site/css -f -r /Library/Ruby/Gems/2.0.0/gems/bourbon-3.1.8/lib/bourbon.rb;
     git checkout master;
     cp -r _site/* .;
-    rm -Rf _site;
+//    rm -Rf _site;
     rm -Rf .sass-cache;
     rm -Rf _cache;
     git add .;

@@ -14,7 +14,7 @@ task :generate do
   puts "Generating site with Jekyll..."
   exec(<<-CMD)
     set -e
-    jekyll;
+    jekyll build;
     sass --update _sass:_site/css -f -r bourbon;
     git checkout master;
     cp -r _site/* .;
@@ -22,7 +22,7 @@ task :generate do
     rm -Rf .sass-cache;
     rm -Rf _cache;
     git add .;
-    git commit -m "updating gh-pages";
+    git commit -m "Regenerating pages";
   CMD
 end # task :generate
 

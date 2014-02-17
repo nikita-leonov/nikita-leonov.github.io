@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "UINavigationBar and UIToolbar customization. Ultimate solution."
 date:   2011-04-20 14:15:00
 categories: UIKit

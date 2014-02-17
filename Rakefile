@@ -16,7 +16,7 @@ task :generate do
     git checkout source;
     set -e
     jekyll build;
-    sass --update _sass:_site/css -f -r /Library/Ruby/Gems/2.0.0/gems/bourbon-3.1.8/lib/bourbon.rb;
+    sass --update _sass:_site/css -f -r ./_sass/bourbon/lib/bourbon.rb;
     git checkout master;
     cp -r _site/* .;
     rm -Rf _site;

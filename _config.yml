@@ -1,4 +1,4 @@
 pygments: true
 permalink: /post/:title
-exclude: ['Gemfile','Gemfile.lock','Rakefile','.git']
+exclude: ['Gemfile','Gemfile.lock','Rakefile','.git','.gitignore']
 paginate: 4

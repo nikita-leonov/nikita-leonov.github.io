@@ -17,7 +17,12 @@
             var active = document.querySelector( 'header nav.main a.active' ).innerHTML.toLowerCase(),
                 links = document.querySelectorAll( 'header nav.main li a'),
                 selection = document.querySelector( 'header .nav-selection' ),
-                subactive = document.querySelector( 'header nav.subnav a.active' ).dataset.subnav,
+                subactive = document.querySelector( 'header nav.subnav a.active' );
+                if (subactive) {
+                    subactive = subactive.dataset.subnav;
+                } else {
+                    return;
+                }
                 sublinks = document.querySelectorAll( 'header nav.subnav li a'),
                 subselection = document.querySelector( 'header .subnav-selection' ),
                 i, j, link;

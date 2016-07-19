@@ -10,7 +10,7 @@ keywords: "fun, pokemon go, cheat, hack, ios"
 The nature of a cheat is simple — It allows you to fake your current location on the phone, so you can catch pokemons whenever you want. Proposed way of cheating works only for iPhones & iPads, as it depends on special set of tools that available for iOS developers. While description may looks  a little bit technical, the goal is to describe it step by step, so everyone will be able to use it. Let me know if something is unclear  in comments below, so I will adjust article further.
 
 ### Step #1. Downloading tools.
-1. You will need download and install Xcode, that is available here — [http://developer.apple.com/ios/]. You will need an Apple ID to login if you do not have one, you can create a new one right there. 
+1. You will need download and install Xcode, that is available here — <http://developer.apple.com/ios/>. You will need an Apple ID to login if you do not have one, you can create a new one right there. 
   * ![tools-download](http://leonov.co/assets/images/2016/07/pokemon-go/1-tools-download.png) 
 2. You will need to download a placeholder app [link](https://github.com/nikita-leonov/TraingerGO/releases/download/1.0/GoTrainer.zip) that you will need to download and run in Xcode on your phone. The app is absolutely empty and contains no logic, the only purpose is to allow starting fake locations to the phone.
 
@@ -29,7 +29,7 @@ The nature of a cheat is simple — It allows you to fake your current location 
 ### Step #3. Modifying your routes.
 1. Duplicate one of existing routes from Route folder in the list by selecting it and pressing File > Duplicate.
   * ![duplicate-route](http://leonov.co/assets/images/2016/07/pokemon-go/5-duplicate-route.png)
-2. Go to Google Maps ([http://maps.google.com]) and collect coordinates of desired route points simply by clicking points that you need.
+2. Go to Google Maps (<http://maps.google.com>) and collect coordinates of desired route points simply by clicking points that you need.
   * ![google-map-coordinates](http://leonov.co/assets/images/2016/07/pokemon-go/6-google-map-coordinates.png)
 3. Modify content of recently duplicated .gpx file by replacing coordinates with those you just collected in 3.2. Add any additional points that you need but increase the time vaulue for each point. Time attribute will be used to define speed of walk for you trainer, so do not define it too low or too high to pretend like you are walking.
   * ![modify-route](http://leonov.co/assets/images/2016/07/pokemon-go/7-modify-route.png)

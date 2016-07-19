@@ -29,7 +29,7 @@ The nature of a cheat is simple — It allows you to fake your current location 
 ### Step #3. Modifying your routes.
 1. Duplicate one of existing routes from Route folder in the list by selecting it and pressing File > Duplicate.
   * ![duplicate-route](http://leonov.co/assets/images/2016/07/pokemon-go/5-duplicate-route.png)
-2. Go to Google Maps (http://maps.google.com) and collect coordinates of desired route points simply by clicking points that you need.
+2. Go to Google Maps ([http://maps.google.com]) and collect coordinates of desired route points simply by clicking points that you need.
   * ![google-map-coordinates](http://leonov.co/assets/images/2016/07/pokemon-go/6-google-map-coordinates.png)
 3. Modify content of recently duplicated .gpx file by replacing coordinates with those you just collected in 3.2. Add any additional points that you need but increase the time vaulue for each point. Time attribute will be used to define speed of walk for you trainer, so do not define it too low or too high to pretend like you are walking.
   * ![modify-route](http://leonov.co/assets/images/2016/07/pokemon-go/7-modify-route.png)

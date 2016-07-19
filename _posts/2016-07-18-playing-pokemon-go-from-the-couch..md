@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Playing Pokemon GO from the couch."
-description: "Not every player knows, but it is possible to play Pokemon GO without going out into real world. Not everyone knows this cheat, so I want to be sure that it is available for the masses."
+description: "Not every player knows, but it is possible to play Pokemon GO without going out into real world. The cheat is not very well known yet, but it is something that most advanced players uses."
 comments: true
 keywords: "fun, pokemon go, cheat, hack, ios"
 ---

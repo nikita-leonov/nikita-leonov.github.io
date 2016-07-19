@@ -12,7 +12,7 @@ The nature of a cheat is simple — It allows you to fake your current location 
 ### Step #1. Downloading tools.
 1. You will need download and install Xcode, that is available here — <http://developer.apple.com/ios/>. You will need an Apple ID to login if you do not have one, you can create a new one right there. 
   * ![tools-download](http://leonov.co/assets/images/2016/07/pokemon-go/1-tools-download.png) 
-2. You will need to download a placeholder app [link](https://github.com/nikita-leonov/TraingerGO/releases/download/1.0/GoTrainer.zip) that you will need to download and run in Xcode on your phone. The app is absolutely empty and contains no logic, the only purpose is to allow starting fake locations to the phone.
+2. You will need to download a placeholder app([link](https://github.com/nikita-leonov/TraingerGO/releases/download/1.0/GoTrainer.zip)) that you will need to download and run in Xcode on your phone. The app is absolutely empty and contains no logic, the only purpose is to allow starting fake locations to the phone.
 
 ### Step #2. Testing setup.
 1. Open a placeholder app that we downloaded on step 1.2. by double-click GoTrainer.xcworkspace. Xcode should pop-up. Follow any requests or recommendations that Xcode will bring, as you lunching it first time it may ask you to accept some Terms of Service or download additional modules.

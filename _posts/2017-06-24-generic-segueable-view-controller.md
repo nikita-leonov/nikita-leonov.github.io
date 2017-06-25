@@ -89,7 +89,7 @@ A default prepare for a segue function is annotated as final to enforce the use 
 
 Enabling generics for segue transformations not only allows to formalize an architecture but also opens a possibility for an implementation of other elegant solutions such as routers. In a further article, I am going to show one of such solutions.
 
-Code of the solution, together with a basic use-case sample is available on GitHub - [http://github.com/nikita-leonov/GenericMVC].
+Code of the solution, together with a basic use-case sample is available on GitHub - [http://github.com/nikita-leonov/GenericMVC](http://github.com/nikita-leonov/GenericMVC).
 
 **Credits**: The major part of a credit for this solution goes to Dave Abrahams as he was the one helped me on the WWDC 2016 Lab to find such an elegant way to restore typing information.
 

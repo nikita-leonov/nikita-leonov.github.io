@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Face-off Studio — TikTok sign-in</title>
+<style>
+  body{margin:0;background:#0d1117;color:#e6edf3;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+       display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;box-sizing:border-box}
+  .card{max-width:640px;background:#161b22;border:1px solid #26303d;border-radius:14px;padding:28px 30px}
+  h1{font-size:20px;margin:0 0 6px} .sub{color:#8b949e;font-size:14px;margin:0 0 18px}
+  code{display:block;background:#1c2230;border:1px solid #26303d;border-radius:8px;padding:12px 14px;
+       font:13px ui-monospace,Menlo,Consolas,monospace;overflow-wrap:anywhere;margin:12px 0}
+  button{background:#238636;color:#fff;border:0;border-radius:8px;padding:9px 16px;font-size:14px;
+         font-weight:600;cursor:pointer;margin-right:8px}
+  button:hover{background:#2ea043}
+  .err{color:#f85149} .ok{color:#3fb950;font-size:13px;visibility:hidden}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>🏒 Face-off Studio — TikTok sign-in</h1>
+  <p class="sub">This page only displays the authorization response from TikTok. Nothing is sent
+  or stored anywhere; the code below is consumed by your own Face-off Studio instance.</p>
+  <div id="out"></div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const code = q.get("code"), err = q.get("error_description") || q.get("error");
+  const out = document.getElementById("out");
+  if (code) {
+    out.innerHTML = '<p>Authorization succeeded. In Face-off Studio open ' +
+      '<b>Settings &rarr; TikTok accounts</b>, paste this into the connect field, and click ' +
+      '<b>Connect</b>:</p><code id="c"></code>' +
+      '<button id="copy">Copy full URL</button><span class="ok" id="done">copied &#10003;</span>';
+    document.getElementById("c").textContent = location.href;
+    document.getElementById("copy").onclick = async () => {
+      await navigator.clipboard.writeText(location.href);
+      document.getElementById("done").style.visibility = "visible";
+    };
+  } else {
+    out.innerHTML = '<p class="err">' + (err ? "TikTok reported: " +
+      err.replace(/[&<>]/g, s => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[s])) :
+      "No authorization code in the URL — start the sign-in from Face-off Studio Settings.") + '</p>';
+  }
+</script>
+</body>
+</html>
